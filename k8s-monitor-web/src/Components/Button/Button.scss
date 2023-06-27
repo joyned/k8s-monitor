@@ -1,0 +1,52 @@
+button {
+    border: none;
+    background: transparent;
+    color: var(--header-text-color);
+    border-bottom: 1px solid black;
+    padding: 10px;
+    font-size: 15px;
+
+    .buttonContent {
+        display: flex;
+        align-items: center;
+
+        svg {
+            margin-left: 10px;
+        }
+    }
+}
+
+button:hover {
+    cursor: pointer;
+    color: black;
+}
+
+
+.success {
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: var(--button-success);
+}
+
+.error {
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: var(--button-error);
+}
+
+.warn {
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background-color: var(--button-warn);
+}
+
+.success:active, .error:active, .warn:active {
+    border: none;
+}
+
+.success:hover, .error:hover, .warn:hover {
+    color: white;
+}

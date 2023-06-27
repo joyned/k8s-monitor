@@ -1,0 +1,27 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+
+    thead {
+        th {
+            padding: 20px;
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+                padding: 20px;
+            }
+        }
+    }
+}
+
+.odd {
+    background-color: transparent;
+}
+
+.even {
+    background-color: white;
+}
