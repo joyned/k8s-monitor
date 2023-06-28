@@ -22,31 +22,31 @@ button:hover {
 }
 
 
-.success {
+.green {
     border-radius: 5px;
     border: none;
     color: white;
     background-color: var(--button-success);
 }
 
-.error {
+.red {
     border-radius: 5px;
     border: none;
     color: white;
     background-color: var(--button-error);
 }
 
-.warn {
+.yellow {
     border-radius: 5px;
     color: white;
     border: none;
     background-color: var(--button-warn);
 }
 
-.success:active, .error:active, .warn:active {
+.green:active, .red:active, .yellow:active {
     border: none;
 }
 
-.success:hover, .error:hover, .warn:hover {
+.green:hover, .red:hover, .yellow:hover {
     color: white;
 }

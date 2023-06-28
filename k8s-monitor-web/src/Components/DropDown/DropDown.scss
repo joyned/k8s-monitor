@@ -1,0 +1,22 @@
+.dropDown {
+    background-color: white;
+    border-radius: 5px;
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 10px;
+        background-color: var(--primary-color);
+        color: white;
+
+        span {
+            font-size: x-large;
+        }
+    }
+
+    .content {
+        padding: 10px;
+    }
+}

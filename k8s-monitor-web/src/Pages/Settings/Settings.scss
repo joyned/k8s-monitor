@@ -1,0 +1,33 @@
+.dropDown {
+    margin-bottom: 20px;
+}
+
+.cluster,
+.monitor,
+.email {
+    .tableButton {
+        margin-top: 10px;
+        text-align: end;
+    }
+}
+
+.cluster {
+    .tableButton {
+        margin-top: 10px;
+        text-align: end;
+    }
+
+    svg {
+        cursor: pointer;
+    }
+}
+
+.email {
+    form {
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

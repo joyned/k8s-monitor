@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
 import Home from './Pages/Home/Home';
+import Ingresses from './Pages/Ingresses/Ingresses';
 import Pods from './Pages/Pods/Pods';
 import Services from './Pages/Services/Services';
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
+import Settings from './Pages/Settings/Settings';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -19,6 +21,8 @@ root.render(
           <Route path='/home' element={<Home />} />
           <Route path='/pods' element={<Pods />} />
           <Route path='/services' element={<Services />} />
+          <Route path='/ingress' element={<Ingresses />}></Route>
+          <Route path='/settings' element={<Settings />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

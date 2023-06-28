@@ -70,11 +70,11 @@ const pods: Pod[] = [
 function getStatusStyle(status: string) {
     switch (status) {
         case 'Running':
-            return 'success';
+            return 'green';
         case 'Error': case 'CrashLoopBackOff':
-            return 'error'
+            return 'red'
         default:
-            return 'success';
+            return 'yellow';
     }
 }
 
@@ -91,7 +91,7 @@ function Pods() {
                                 <TableBodyItem value={item.name}></TableBodyItem>
                                 <TableBodyItem value={item.imageId}></TableBodyItem>
                                 <TableBodyItem value={item.since}></TableBodyItem>
-                                <TableBodyItem value={<Button value={item.status} style={getStatusStyle(item.status)} onClick={() => {
+                                <TableBodyItem value={<Button value={item.status} buttonStyle={getStatusStyle(item.status)} onClick={() => {
                                     pushNotificationService.sendMessage({
                                         message: item.name,
                                         style: 'success'

@@ -2,25 +2,25 @@ import './Button.scss';
 import { BsArrowRightCircle } from 'react-icons/bs'
 
 enum ButtonStyle {
-    success = 'success',
-    error = 'error',
-    warn = 'warn'
+    green = 'green',
+    red = 'red',
+    yellow = 'yellow'
 
 }
 
 interface ButtonProps {
     value: string;
-    style?: string | ButtonStyle;
+    buttonStyle?: string | ButtonStyle;
     icon?: any;
     onClick?: Function | any
 }
 
 function Button(props: ButtonProps) {
     return (
-        <button onClick={props.onClick} className={props.style}>
+        <button onClick={props.onClick} className={props.buttonStyle}>
             <div className='buttonContent'>
                 {props.value}
-                {!props.style && !props.icon ? (
+                {!props.buttonStyle && !props.icon ? (
                     <BsArrowRightCircle></BsArrowRightCircle>
                 ) : (<>{props.icon}</>)}
             </div>

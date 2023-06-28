@@ -22,6 +22,12 @@ function Header() {
                 </div>
                 <div className="right">
                     <div className="namespace">
+                        <span>Cluster:</span>
+                        <SelectOption>
+                            <option>dev</option>
+                            <option>prd</option>
+                        </SelectOption>
+                        <span className="separator"></span>
                         <span>Namespace:</span>
                         <SelectOption>
                             <option>all</option>
