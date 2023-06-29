@@ -20,6 +20,26 @@
     svg {
         cursor: pointer;
     }
+
+    .addClusterModal {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        div {
+            margin-bottom: 20px;
+        }
+        input {
+            width: 95%;
+        }
+    }
+
+    .modalButton {
+        text-align: end;
+        button {
+            margin-right: 10px;
+        }       
+    }
 }
 
 .email {
