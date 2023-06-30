@@ -16,9 +16,7 @@ interface Props {
 function MonitorSettings(props: Props) {
     return (
         <DropDown title='Monitor' isToggleable={false}>
-            <Tooltip text='Configure'>
-                <p>Configure your clusters monitor.</p>
-            </Tooltip>
+            <p>Configure your clusters monitor.</p>
             <Table>
                 <TableHeader>
                     <TableHeaderItem value='Name' />

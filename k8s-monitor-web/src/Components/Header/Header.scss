@@ -21,6 +21,7 @@ header {
 
             .navBar {
                 width: 40%;
+                display: block;
 
                 a {
                     color: white;
@@ -28,16 +29,73 @@ header {
                     margin-left: 30px;
                 }
             }
+
+            .navBarMobile {
+                display: none;
+
+                .icon {
+                    color: white;
+                    margin-left: 20px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+
+                    svg {
+                        font-size: 25px;
+                    }
+
+                    span {
+                        font-size: 19px;
+                        margin-left: 15px;
+                    }
+                }
+
+                .content {
+                    display: none;
+                    position: fixed;
+                    left: 88px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    background: var(--primary-color);
+                    padding: 20px;
+                    border-radius: 5px;
+                    border: 1px solid white;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        font-size: 19px;
+                        cursor: pointer;
+                        padding: 10px;
+                    }
+
+                    hr {
+                        width: 100%;
+                    }
+
+                    .namespace {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 19px;
+                        color: white;
+                    }
+
+                    a:hover {
+                        background-color: #ffffff38;
+                    }
+                }
+            }
         }
 
         .right {
             display: flex;
             align-items: center;
-            width: 45%;
+            width: 45vw;
             justify-content: space-between;
 
             .namespace {
                 color: white;
+
                 span {
                     margin-right: 10px;
                     margin-left: 20px;
@@ -59,5 +117,86 @@ header {
             }
         }
 
+    }
+}
+
+@media(max-width: 1287px) {
+    header {
+        font-size: 15px;
+
+        .content {
+            .right {
+                width: 55vw;
+                justify-content: space-around;
+
+                .namespace {
+                    select {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 940px) {
+    header {
+        font-size: 15px;
+
+        .content {
+            .left {
+                .navBar {
+                    display: none;
+                }
+
+                .navBarMobile {
+                    display: block;
+
+                    .content {
+                        .namespace {
+                            display: none;
+                        }
+                    }
+                }
+
+                .navBarMobile:hover {
+                    .content {
+                        display: flex;
+                    }
+                }
+            }
+
+            .right {
+                width: 80vw;
+                justify-content: end;
+
+                .namespace {
+                    margin-right: 10px;
+                }
+
+            }
+        }
+    }
+}
+
+@media(max-width: 674px) {
+    header {
+        font-size: 15px;
+
+        .content {
+            .left {
+                .navBarMobile {
+                    .content {
+                        .namespace {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+
+            .namespace {
+                display: none;
+            }
+        }
     }
 }
